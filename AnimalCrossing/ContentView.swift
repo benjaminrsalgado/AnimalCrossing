@@ -20,6 +20,7 @@ struct ContentView: View {
     }
 }
 
+//DATOS
 struct Datos: Identifiable{
     let id = UUID()
     let fruta: String
@@ -28,15 +29,18 @@ struct Datos: Identifiable{
 }
 
 struct Tarjeta: View{
+    //LISTA DE DATOS
     @State var frutas : [Datos] = [
-        Datos(fruta: "Melon", image: "melon", meGusta: true),
-        Datos(fruta: "Sandia", image: "melon", meGusta: true),
-        Datos(fruta: "Manzana", image: "melon", meGusta: true),
-        Datos(fruta: "Papaya", image: "melon", meGusta: true)
+        Datos(fruta: "Melon", image: "melon", meGusta: false),
+        Datos(fruta: "Sandia", image: "melon", meGusta: false),
+        Datos(fruta: "Manzana", image: "melon", meGusta: false),
+        Datos(fruta: "Papaya", image: "melon", meGusta: false)
     ]
     var body: some View{
+        //SCROLLVIEW
         ScrollView{
             VStack{
+                //FOR EACH
                 ForEach(frutas.indices, id:\.self){ index in
                     VStack{
                         Image(frutas[index].image)
