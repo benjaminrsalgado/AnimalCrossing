@@ -30,8 +30,15 @@ struct Datos: Identifiable{
 
 struct Tarjeta: View{
     //LISTA DE DATOS
+    
     @State var frutas : [Datos] = [
         Datos(fruta: "Melon", image: "melon", meGusta: false),
+        Datos(fruta: "Sandia", image: "melon", meGusta: false),
+        Datos(fruta: "Manzana", image: "melon", meGusta: false),
+        Datos(fruta: "Papaya", image: "melon", meGusta: false),
+        Datos(fruta: "Sandia", image: "melon", meGusta: false),
+        Datos(fruta: "Manzana", image: "melon", meGusta: false),
+        Datos(fruta: "Papaya", image: "melon", meGusta: false),
         Datos(fruta: "Sandia", image: "melon", meGusta: false),
         Datos(fruta: "Manzana", image: "melon", meGusta: false),
         Datos(fruta: "Papaya", image: "melon", meGusta: false)
